@@ -6,6 +6,11 @@ public class HolaMundo : MonoBehaviour
 {
     int x;
 
+    private void Awake()
+    {
+        Debug.Log("Soy el primero en despertar");
+    }
+
     void Start()
     {
         x = 10;
@@ -18,5 +23,15 @@ public class HolaMundo : MonoBehaviour
     {
         x++;
         Debug.Log(x);
+    }
+
+    private void FixedUpdate()
+    {
+        Debug.LogWarning("Soy el FixedUpdate");
+    }
+
+    private void LateUpdate()
+    {
+        Debug.LogWarning("Y yo soy el LateUpdate");
     }
 }
