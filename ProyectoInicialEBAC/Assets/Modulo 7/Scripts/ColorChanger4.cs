@@ -16,7 +16,7 @@ public class ColorChanger4 : MonoBehaviour
 
         object2Status = object2GO.GetComponent<ColorChanger3>().object2Status;
 
-        if (object1Status || object2Status)
+        if (object1Status && object2Status)
         {
             GetComponent<MeshRenderer>().material.color = Color.white;
         }
