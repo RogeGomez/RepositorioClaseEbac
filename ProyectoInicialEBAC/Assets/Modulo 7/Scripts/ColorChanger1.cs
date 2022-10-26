@@ -4,33 +4,19 @@ using UnityEngine;
 
 public class ColorChanger1 : MonoBehaviour
 {
-    bool object1 = true;
-    bool object2 = true;
-    bool object3 = true;
+    public bool object2 = true;
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
-        if (object1)
+        if (object2)
         {
             GetComponent<MeshRenderer>().material.color = Color.white;
-            object1 = false;
+            object2 = false;
         }
         else
         {
             GetComponent<MeshRenderer>().material.color = Color.black;
-            object1 = true;
-        }
-
-        if (object3 || object2 || object1)
-        {
-            Debug.Log("El valor booleano del objeto1 es: " + object1);
-            Debug.Log("El valor booleano del objeto2 es: " + object2);
-        }
-
-        if ((object3 && object2) || object1)
-        {
-            Debug.Log("El valor booleano del objeto1 es: " + object1);
-            Debug.Log("El valor booleano del objeto2 es: " + object2);
+            object2 = true;
         }
     }
 }
