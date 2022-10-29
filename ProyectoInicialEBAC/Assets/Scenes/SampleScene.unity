@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1476318202399540297, guid: ea7c63344e833454e96bd16b4006cc3b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1476318202399540301, guid: ea7c63344e833454e96bd16b4006cc3b, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -371,8 +375,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.0317734, y: -0.044965655, z: 0.0014292346, w: 0.9984821}
-  m_LocalPosition: {x: 4.314191, y: 1.6890173, z: -7.4386654}
+  m_LocalRotation: {x: 0.001807483, y: -0.038994607, z: 0.00006888074, w: 0.9992378}
+  m_LocalPosition: {x: 3.9528918, y: 2.0881443, z: -6.2050653}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -407,6 +411,10 @@ PrefabInstance:
     - target: {fileID: 1476318202399540297, guid: ea7c63344e833454e96bd16b4006cc3b, type: 3}
       propertyPath: m_Name
       value: Sphere (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476318202399540297, guid: ea7c63344e833454e96bd16b4006cc3b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1476318202399540301, guid: ea7c63344e833454e96bd16b4006cc3b, type: 3}
       propertyPath: m_RootOrder
@@ -492,7 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e102e9c5744c3cf439ab44fbb453fb9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  object1: 1
+  object1: 0
 --- !u!1001 &1542683710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -503,6 +511,10 @@ PrefabInstance:
     - target: {fileID: 1476318202399540297, guid: ea7c63344e833454e96bd16b4006cc3b, type: 3}
       propertyPath: m_Name
       value: Sphere (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476318202399540297, guid: ea7c63344e833454e96bd16b4006cc3b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1476318202399540301, guid: ea7c63344e833454e96bd16b4006cc3b, type: 3}
       propertyPath: m_RootOrder
@@ -678,6 +690,10 @@ PrefabInstance:
     - target: {fileID: 1476318202399540297, guid: ea7c63344e833454e96bd16b4006cc3b, type: 3}
       propertyPath: m_Name
       value: Sphere (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476318202399540297, guid: ea7c63344e833454e96bd16b4006cc3b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1476318202399540301, guid: ea7c63344e833454e96bd16b4006cc3b, type: 3}
       propertyPath: m_RootOrder

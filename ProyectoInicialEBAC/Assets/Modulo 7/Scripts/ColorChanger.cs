@@ -10,12 +10,12 @@ public class ColorChanger : MonoBehaviour
     {
         if (object1)
         {
-            GetComponent<MeshRenderer>().material.color = Color.white;
+            GetComponent<MeshRenderer>().material.color = Color.black;
             object1 = false;
         }
         else
         {
-            GetComponent<MeshRenderer>().material.color = Color.black;
+            GetComponent<MeshRenderer>().material.color = Color.white;
             object1 = true;
         }
     }

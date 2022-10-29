@@ -9,6 +9,7 @@ public class ColorChanger3 : MonoBehaviour
 
     public bool object1Status;
     public bool object2Status;
+    public bool statusChecker;
 
     void FixedUpdate()
     {
@@ -21,6 +22,12 @@ public class ColorChanger3 : MonoBehaviour
         if (object1Status || object2Status)
         {
             GetComponent<MeshRenderer>().material.color = Color.white;
+            statusChecker = true;
+        }
+        else
+        {
+            GetComponent<MeshRenderer>().material.color = Color.black;
+            statusChecker = false;
         }
     }
 }
