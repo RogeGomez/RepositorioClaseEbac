@@ -40,7 +40,7 @@ public class EjerciciosVariablesMod8 : MonoBehaviour
 
         // Punto 5
         float d = 10.12345f;
-        string numberToString = d.ToString("#.0000");
+        string numberToString = d.ToString("#.0000"); // variableString.ToString("nX") o ("Nx") Donde "x" es el número de posiciones que quieres agregar
         Debug.Log(numberToString);
 
         // Punto 6
