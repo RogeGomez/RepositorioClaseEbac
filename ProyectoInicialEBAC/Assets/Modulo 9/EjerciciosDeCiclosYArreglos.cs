@@ -56,8 +56,6 @@ public class EjerciciosDeCiclosYArreglos : MonoBehaviour
         #endregion
 
         #region Tercera forma de hacer el ejercicio (Jesús)
-
-        #endregion
         // Otra forma es en un solo for, dando los valores random en la primer posición y sumándolos, luego pone los valores random de la segunda posición y los suma.
         // int[] a = new int[2];
         // int[] b = new int[2];
@@ -75,69 +73,44 @@ public class EjerciciosDeCiclosYArreglos : MonoBehaviour
         // }
         #endregion
 
-        #region 2do Ejercicio
-        // string[] stringArray = { "Hola" + " " + "Mundo" + " " + "en" + " " + "la" + " " + "consola" + " " + "de" + " " + "Unity" };
+        #endregion
 
-        // string[] stringArray = { "Hola", "Mundo", "Unity" };
+        #region 2do Ejercicio
+        // string[] stringArray = { "Hola", "Mundo", "en", "la", "consola", "de", "Unity" };
         // string newText = " ";
 
         // foreach (string simpleText in stringArray)
         // {
-        //     newText += simpleText;
+        //     newText += " " + simpleText;
         //     Debug.Log(newText);
         // }
         #endregion
 
         #region 3er Ejercicio
-        // int[,] arrayA = { { 1, 2, 3 }, { 4, 5, 6 } };
-        // int[] arrayB = { 7, 8, 9 };
+        int[,] a = { { 1, 2, 3 }, { 4, 5, 6 } };
+        int[] b = { 7, 8, 9 };
+        int[,] c = new int[2, 1];
 
-        // for (int i = 0; i < arrayA.GetLength(0); i++)
+        for (int i = 0; i < a.GetLength(1); i++)
+        {
+            Debug.Log($"(D0) Multiplicación de {a[0, i]} y {b[i]} es : {a[0, i] * b[i]}");
+            Debug.Log($"(D1) Multiplicación de {a[1, i]} y {b[i]} es : {a[1, i] * b[i]}");
+
+            for (int j = 0; j < c.Length; j++)
+            {
+                Debug.Log($"El resultado de la suma es : {c[j, i] += a[1, j] * b[i]}");
+            }
+        }
+
+        // for (int i = 0; i < a.GetLength(1); i++)
         // {
-        //     for (int j = 0; j < arrayA.GetLength(1); j++)
+        //     Debug.Log($"Multiplicación de {a[1, i]} y {b[i]} es : {a[1, i] * b[i]}");
+
+        //     for (int j = 0; j < d.Length; j++)
         //     {
-        //         for (int k = 0; k < arrayB.Length; k++)
-        //         {
-        //             Debug.Log($"la multiplicación de {arrayA[i, j]} y {arrayB[k]} es : {arrayA[i, j] * arrayB[k]}");
-        //         }
+        //         Debug.Log($"El resultado de la suma es : {d[j] += a[1, i] * b[i]}");
         //     }
         // }
         #endregion
-
-        // int[,] arrayA = { { 1, 2, 3 }, { 4, 5, 6 } };
-        // int[] arrayB = { 7, 8, 9 };
-
-        // for (int i = 0; i < arrayA.GetLength(0); i++)
-        // {
-        //     for (int j = 0; j < arrayA.GetLength(1); j++)
-        //     {
-        //         for (int k = 0; k < arrayB.Length; k++)
-        //         {
-        //             // hace la suma de cada multiplicación
-        //             // Debug.Log($"la multiplicación de {arrayA[i, j]} y {arrayB[k]} es : {arrayA[i, j] * arrayB[k]} y la suma es {addition += arrayB[k]}");
-
-        //             // Debug.Log($"la multiplicación de {arrayA[i, j]} y {arrayB[k]} es : {arrayA[i, j] * arrayB[k]}");
-
-        //             Debug.Log($"la multiplicación de {arrayA[i, j]} y {arrayB[k]} es : {arrayA[i, j] * arrayB[k]}");
-
-        //         }
-        //     }
-        // }
-
-        // int[,] a = { { 1, 2, 3 }, { 4, 5, 6 } };
-        // int[] b = { 7, 8, 9 };
-
-        // for (int i = 0; i < a.GetLength(0); i++)
-        // {
-        //     for (int j = 0; j < a.GetLength(1); j++)
-        //     {
-        //         // recorre el array bidimensional sin problema.
-        //         // Debug.Log($"los números del array bidimensional son : {a[i, j]}");
-        //         for (int k = 0; k < b.Length; k++)
-        //         {
-        //             Debug.Log($"multiplicacion {a[i, j] * b[k]}");
-        //         }
-        //     }
-        // }
     }
 }
