@@ -31,14 +31,19 @@ public class JustAScript : MonoBehaviour
             GameObject temporalPrefabR = Instantiate(_gameObject, Vector3.right, Quaternion.identity);
             numberA++;
             temporalPrefabR.name = "r en más 0.5";
-            myGameObjectList.Add(_gameObject);
+            myGameObjectList.Add(temporalPrefabR);
         }
         else if (temporalPrefab.GetComponent<MeshRenderer>().material.color.g > 0.7f)
         {
             GameObject temporalPrefabG = Instantiate(_gameObject, Vector3.left, Quaternion.identity);
             numberB++;
             temporalPrefabG.name = "g en más 0.7";
-            myGameObjectList.Add(_gameObject);
+            myGameObjectList.Add(temporalPrefabG);
+        }
+
+        if ()
+        {
+
         }
     }
 
