@@ -8,11 +8,11 @@ public class JustAScript : MonoBehaviour
     [SerializeField] private int numberB = 1;
     [SerializeField] private string gameObjectNewName = "";
     [SerializeField] private GameObject _gameObject;
+    [SerializeField] private List<GameObject> myGameObjectList = new List<GameObject>();
 
     private GameObject temporalPrefab;
     private Color colorRandom;
 
-    private List<GameObject> myGameObjectList = new List<GameObject>();
 
     private void Start()
     {
@@ -41,9 +41,16 @@ public class JustAScript : MonoBehaviour
             myGameObjectList.Add(temporalPrefabG);
         }
 
-        if ()
+        // punto 7
+        if (myGameObjectList.Count > 5)
         {
-
+            if (myGameObjectList.Count % 2 == 0)
+            {
+                for (int i = 0; i < myGameObjectList.Count; i++)
+                {
+                    myGameObjectList.RemoveAt(i);
+                }
+            }
         }
     }
 
