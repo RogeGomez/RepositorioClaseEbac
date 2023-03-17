@@ -11,14 +11,12 @@ public class JustAScript : MonoBehaviour
     [SerializeField] private List<GameObject> myGameObjectList = new List<GameObject>();
 
     private GameObject temporalPrefab;
-    private Color colorRandom;
-
 
     private void Start()
     {
         // Punto 5
         temporalPrefab = Instantiate(_gameObject, Vector3.zero, Quaternion.identity);
-        RandomColorChanger();
+        temporalPrefab.GetComponent<MeshRenderer>().material.color = new Color(Random.Range(0, 1f), Random.Range(0, 1f), Random.Range(0, 1f));
     }
 
     private void Update()
@@ -49,11 +47,5 @@ public class JustAScript : MonoBehaviour
                 }
             }
         }
-    }
-
-    private void RandomColorChanger()
-    {
-        colorRandom = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
-        _gameObject.GetComponent<MeshRenderer>().sharedMaterial.color = colorRandom;
     }
 }
