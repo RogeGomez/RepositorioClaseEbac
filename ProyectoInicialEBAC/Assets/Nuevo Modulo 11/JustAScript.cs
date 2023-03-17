@@ -16,11 +16,8 @@ public class JustAScript : MonoBehaviour
 
     private void Start()
     {
+        // Punto 5
         temporalPrefab = Instantiate(_gameObject, Vector3.zero, Quaternion.identity);
-    }
-
-    private void FixedUpdate()
-    {
         RandomColorChanger();
     }
 
