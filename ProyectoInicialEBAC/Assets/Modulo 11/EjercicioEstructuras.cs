@@ -69,6 +69,7 @@ public class EjercicioEstructuras : MonoBehaviour
     Queue<string> queueStrings = new Queue<string>();
     void ListOfNames()
     {
+        Debug.Log("Cuarto Ejercicio");
         nameStack.Push("Hugo");
         nameStack.Push("Carlos");
         nameStack.Push("Juan");
